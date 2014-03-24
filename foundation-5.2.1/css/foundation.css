@@ -1,10 +1,24 @@
+/*@media screen and (max-width: 480px)
+p {
+margin: 0 auto;
+font-weight: bold;
+font-size: 1.4em;
+width: 300px;
+}
+*/
+
+.introtext {
+float:left;
+display: inline-block;
+}
+
 @font-face {
     font-family: "Chunkfive";
     src: url(Chunkfive.otf) format("truetype");
 }
 
 .spacer{
-    padding: 6em 1em;
+    padding: 4em 1em 6em 1em;
 
 }
 
@@ -14,8 +28,15 @@
 }
 
 .darkbluebg{
-  background: #253946;
-  
+  background: #253946;  
+}
+
+.darkblueqibg{
+  background-image: url(../img/qibg.png);
+}
+
+.lwvbg{
+  background-image: url(http://upload.wikimedia.org/wikipedia/commons/1/16/Texas_State_Capitol_building-front_left_front_oblique_view.JPG);
 }
 
 .whitebg{
@@ -1249,10 +1270,10 @@ meta.foundation-mq-topbar {
     .top-bar.expanded .title-area {
       //background: #333333; }
     .top-bar.expanded .toggle-topbar a {
-      color: #888888; }
+      color: #2787ad; }
       .top-bar.expanded .toggle-topbar a::after {
-        -webkit-box-shadow: 1px 10px 1px 1px #888888, 1px 16px 1px 1px #888888, 1px 22px 1px 1px #888888;
-        box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888; }
+        -webkit-box-shadow: 1px 10px 1px 1px #2787ad, 1px 16px 1px 1px #2787ad, 1px 22px 1px 1px #2787ad;
+        box-shadow: 0 10px 0 1px #2787ad, 0 16px 0 1px #2787ad, 0 22px 0 1px #2787ad; }
 
 .top-bar-section {
   left: 0;
@@ -1262,12 +1283,13 @@ meta.foundation-mq-topbar {
   -moz-transition: left 300ms ease-out;
   transition: left 300ms ease-out; }
   .top-bar-section ul {
-    width: 100%;
+    width: 32%;
+    text-align: center;
     height: auto;
     display: block;
-    //background: #333333;
     font-size: 16px;
-    margin: 0; }
+    margin: 0;
+  }
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
     border-top: solid 1px #1a1a1a;
@@ -3067,7 +3089,9 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  color: white;
+  }
   p.lead {
     font-size: 1.21875rem;
     line-height: 1.6; }
@@ -3093,22 +3117,22 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 2.125rem; }
+  font-size: 2.125rem; color: white;}
 
 h2 {
-  font-size: 1.6875rem; }
+  font-size: 2.3125rem; color: white;}
 
 h3 {
-  font-size: 1.375rem; }
+  font-size: 1.375rem; color: #2787ad;}
 
 h4 {
-  font-size: 1.125rem; }
+  font-size: 1.125rem; color: white;}
 
 h5 {
-  font-size: 1.125rem; }
+  font-size: 1.125rem; color: white;}
 
 h6 {
-  font-size: 1rem; }
+  font-size: 1rem; color: white;}
 
 .subheader {
   line-height: 1.4;
@@ -3257,16 +3281,16 @@ blockquote p {
     line-height: 1.4; }
 
   h1 {
-    font-size: 2.75rem; }
+    font-size: 3rem; color: white; }
 
   h2 {
-    font-size: 2.3125rem; }
+    font-size: 2.0rem; color: white;}
 
   h3 {
-    font-size: 1.6875rem; }
+    font-size: 1.6875rem; color: white;}
 
   h4 {
-    font-size: 1.4375rem; } }
+    font-size: 1.4375rem; color: white;} }
 /*
  * Print styles.
  *
