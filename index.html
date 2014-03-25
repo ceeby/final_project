@@ -50,12 +50,14 @@
     <div class="row darkbluebg spacer">
       <div class="large-12 columns">
         <section id="main">
+      <div class="columns small-12 small-centered medium-8 large-6 large-centered">
       <h2>Howdy.</h2>
       <p>I’m a Product Designer based in Austin, Texas. I design and build awesome things for <b>Web and Mobile</b>. If you have a new project or want to know more about me and my work, let me know.</p>
       <div class="personal-links">
         <a class="button" href="mailto:chrisbraun1@msn.com">Let’s co-create.</a>
         <a class="button" href="download/cv-en.pdf">Download my cv.</a>
       </div>
+     </div>
      </section>
       </div>
     </div>
@@ -77,37 +79,64 @@
 
     <div class="row darkblueqibg spacer">
       <div class="large-12 columns">
-        <h3>Q-Interactive</h3>
+        <h3 style="color:white;">Q-Interactive</h3>
 
       </div>
     </div>
 
     <div class="row lwvbg spacer">
       <div class="large-12 columns">
-        <h3>League of Women Voters of the Austin Area</h3>
+        <h3 style="color:white;">League of Women Voters of the Austin Area</h3>
       </div>
     </div>
     
     <div class="row spacer">
-      <div class="large-12 columns">
+      <div class="columns small-12 small-centered medium-8 large-6">
         <section class="socialnet">
-      <h4>Keep in touch.</h4>
-      <div>
-        <a class="twitter" href="http://twitter.com/vitor376" target="_blank"></a>
-        <a class="facebook" href="http://www.facebook.com/Pinho376" target="_blank"></a>
-        <a class="instagram" href="http://instagram.com/vtr376" target="_blank"></a>
-        <a class="dribbble" href="http://dribbble.com/vtr376" target="_blank"></a>
-        <a class="medium" href="http://medium.com/@vitor376" target="_blank"></a>
-        <a class="mail" href="chrisbraun1@msn.com" target="_blank"></a>
-      </div>
-     </section>
+          <h2>Keep in touch.</h2>
+          <br/><br/>
+          <div class="form">
+              <div>
+                <input type="text" class="label_better" data-new-placeholder="name" placeholder="name">
+              </div>
+              <br/><br/>
+              <div>
+                <input type="email" class="label_better" data-new-placeholder="email" placeholder="email address">
+          </div>
+            <!--
+            <input type="text" class="label_better" data-position="top" placeholder="Username">
+            <input type="text" class="label_better" data-position="top" placeholder="Email Address">
+            
+            <form class="bl_form">
+            <div class="lb_wrap" style="position:relative; display: absolute;">
+              <input type="text" class="bl_input label_better" data-new-placeholder="Username" placeholder="Username">
+              <input type="text" class="bl_input label_better" data-new-placeholder="Username" placeholder="Username">
+            </div>
+            </form>
+            <a class="twitter" href="http://twitter.com/vitor376" target="_blank"></a>
+            <a class="facebook" href="http://www.facebook.com/Pinho376" target="_blank"></a>
+            <a class="instagram" href="http://instagram.com/vtr376" target="_blank"></a>
+            <a class="dribbble" href="http://dribbble.com/vtr376" target="_blank"></a>
+            <a class="medium" href="http://medium.com/@vitor376" target="_blank"></a>
+            <a class="mail" href="chrisbraun1@msn.com" target="_blank"></a>
+          -->
+       </section>
       </div>
     </div>
 
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/jquery.label_better.js"/></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+    </script>
+    <script>
+      $("input.label_better").label_better({position: "top", // This will let you define the position where the label will appear when the user clicked on the input fields. Acceptable options are "top", "bottom", "left" and "right". Default value is "top".
+      animationTime: 1000, // This will let you control the animation speed when the label appear. This option accepts value in milliseconds. The default value is 500.
+      easing: "bounce", // This option will let you define the CSS easing you would like to see animating the label. The option accepts all default CSS easing such as "linear", "ease" etc. Another extra option is you can use is "bounce". The default value is "ease-in-out".
+      offset: 80, // You can add more spacing between the input and the label. This option accepts value in pixels (without the unit). The default value is 20.
+      hidePlaceholderOnFocus: true // The default placeholder text will hide on focus
+      });
     </script>
   </body>
 </html>
